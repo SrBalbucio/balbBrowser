@@ -1,0 +1,117 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/textview1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:background="#212121"
+		android:gravity="center_horizontal"
+		android:text="URL"
+		android:textSize="16sp"
+		android:textColor="#FFFFFF" />
+	<de.hdodenhof.circleimageview.CircleImageView
+		android:id="@+id/circleimageview1"
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:background="#212121"
+		android:src="@drawable/default_image"
+		app:civ_border_width="1dp"
+		app:civ_border_color="#008DCD"
+		app:civ_circle_background_color="#FFFFFF"
+		app:civ_border_overlay="true" />
+	<ScrollView
+		android:id="@+id/vscroll1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#424242">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="5dp"
+			android:gravity="center_horizontal"
+			android:orientation="vertical"
+			android:layout_gravity="center_horizontal">
+			<TextView
+				android:id="@+id/textview2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="8dp"
+				android:paddingTop="8dp"
+				android:paddingRight="8dp"
+				android:text="balbBrowser"
+				android:textSize="14sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF" />
+			<TextView
+				android:id="@+id/textview3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="8dp"
+				android:paddingTop="1dp"
+				android:paddingRight="8dp"
+				android:paddingBottom="8dp"
+				android:text="Desenvolvido por Sr_Balbucio!"
+				android:textSize="11sp"
+				android:textColor="#BDBDBD" />
+			<TextView
+				android:id="@+id/textview5"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Options"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF" />
+			<CheckBox
+				android:id="@+id/checkbox1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Usar JavaScript nos sites\?"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF"
+				android:checked="true" />
+			<CheckBox
+				android:id="@+id/checkbox2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Simular um Desktop\?"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+			<CheckBox
+				android:id="@+id/checkbox3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Usar Mobile Mode\?"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+			<TextView
+				android:id="@+id/textview4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Mais funções"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF" />
+			<Button
+				android:id="@+id/button2"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:padding="5dp"
+				android:background="#616161"
+				android:text="HTML Editor"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

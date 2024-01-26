@@ -1,0 +1,136 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<ScrollView
+			android:id="@+id/vscroll1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<LinearLayout
+				android:id="@+id/linear1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/textview4"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="Pesquisar"
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:layout_gravity="center_horizontal|center_vertical" />
+				<Switch
+					android:id="@+id/switch1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Ao pressionar o botão de Pesquisa por alguns segundos a pesquisa é redirecionada ao ApkPure"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<Spinner
+					android:id="@+id/spinner1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:spinnerMode="dropdown" />
+				<TextView
+					android:id="@+id/textview2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="Downloads"
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:layout_gravity="center_horizontal|center_vertical" />
+				<Switch
+					android:id="@+id/switch2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Abrir outro aplicativo para fazer Downloads\?"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<Switch
+					android:id="@+id/switch3"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Perguntar se um Download realmente deve ser feito\?"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview3"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="Optimização"
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:layout_gravity="center_horizontal|center_vertical" />
+				<Switch
+					android:id="@+id/switch4"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Deletar Cache, Cookies e afins ao fechar o Navegador"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/textview5"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="Desing"
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#000000"
+					android:layout_gravity="center_horizontal|center_vertical" />
+				<Switch
+					android:id="@+id/switch5"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Desing simples (sem Console e Título)"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<Switch
+					android:id="@+id/switch6"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Usar novo Desing (BETA)"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
